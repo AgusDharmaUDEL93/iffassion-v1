@@ -27,6 +27,7 @@ const AboutList = () => {
           {ABOUT_ITEMS.map((items) => {
             return (
               <Button
+                justifyContent={"flex-start"}
                 key={items.id}
                 variant={"ghost"}
                 colorScheme={items.id == onClick ? "teal" : "gray"}

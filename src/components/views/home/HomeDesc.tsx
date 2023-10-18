@@ -29,7 +29,7 @@ const HomeDesc = () => {
             Sebuah platform yang didedikasikan untuk para penggemar dunia
             informatika seperti kalian! IFASSION adalah tempat di mana kalian
             bisa menemukan berbagai tes minat dan informasi minat seputar dunia
-            informatika, semuanya tanpa biaya sepeser pun
+            informatika, semuanya tanpa biaya sepeser pun.
           </Text>
         </Stack>
       </Flex>

@@ -2,7 +2,7 @@ import { ChainingResponse } from "@/data/dto/ChainingResponse";
 import { Box, Button, Flex, HStack, Heading, Spinner } from "@chakra-ui/react";
 import axios from "axios";
 import { useRouter } from "next/router";
-import React, { useEffect, useState } from "react";
+import React, { use, useEffect, useState } from "react";
 
 const QuestionPart = () => {
   const initial: ChainingResponse = {
@@ -14,16 +14,16 @@ const QuestionPart = () => {
   const [chainingResponse, setChainingResponse] =
     useState<ChainingResponse>(initial);
 
-  const [answer, setAnswer] = useState(false);
   const [questionId, setQuestionId] = useState("");
+  const [chainingId, setChainingId] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
   const initialUrl = `https://ifassion.user.cloudjkt01.com/chaining`;
-  const chainingUrl = `https://ifassion.user.cloudjkt01.com/chaining/${chainingResponse.data?.chaining.id}`;
+  const chainingUrl = `https://ifassion.user.cloudjkt01.com/chaining/${chainingId}`;
 
   const router = useRouter();
 
-  async function getData() {
+  async function getData(answer?: boolean) {
     setIsLoading(true);
     if (chainingResponse.code == 0) {
       const response = await axios.post(initialUrl, null, {
@@ -34,10 +34,13 @@ const QuestionPart = () => {
       });
       const json: ChainingResponse = response.data;
       setChainingResponse(json);
+
       setQuestionId(json.data?.question?.id ?? "");
+      setChainingId(json.data?.chaining?.id ?? "");
       setIsLoading(false);
       return;
     }
+    console.log(answer);
     const response = await axios.post(
       chainingUrl,
       {
@@ -53,7 +56,11 @@ const QuestionPart = () => {
     );
     const json: ChainingResponse = response.data;
     setChainingResponse(json);
+    console.log(json.data?.question?.id);
     setQuestionId(json.data?.question?.id ?? "");
+    console.log(questionId);
+    setChainingId(json.data?.chaining?.id ?? "");
+
     setIsLoading(false);
   }
 
@@ -86,8 +93,7 @@ const QuestionPart = () => {
             variant={"outline"}
             colorScheme={"teal"}
             onClick={() => {
-              setAnswer(true);
-              getData();
+              getData(true);
             }}
           >
             Ya
@@ -96,8 +102,7 @@ const QuestionPart = () => {
             w={"120px"}
             colorScheme={"teal"}
             onClick={() => {
-              setAnswer(false);
-              getData();
+              getData(false);
             }}
           >
             Tidak

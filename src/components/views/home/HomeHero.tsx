@@ -2,8 +2,12 @@ import { Box, Button, Flex, Heading, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 import Lottie from "react-lottie-player";
 import HERO_LOTTIE from "../../../../public/assets/lottie/hero.json";
+import navigate from "@/utils/navigate";
+import { useRouter } from "next/router";
 
 const HomeHero = () => {
+  const router = useRouter();
+
   return (
     <>
       <Flex
@@ -23,7 +27,14 @@ const HomeHero = () => {
             Anda.
           </Text>
           <Box>
-            <Button colorScheme={"teal"}>Get Started</Button>
+            <Button
+              colorScheme={"teal"}
+              onClick={() => {
+                navigate(router, "/test");
+              }}
+            >
+              Get Started
+            </Button>
           </Box>
         </Stack>
         <Box>
