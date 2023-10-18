@@ -1,13 +1,13 @@
 # IFASSION Website
 
-Ifassion merupakan website yang dirancang untuk menentukan minat mahasiswa menggunakan pendekatan sistem pakar dan menggunakan algoritma forward chaining
+Ifassion is a website designed to determine student interests using an expert system approach and using a forward chaining algorithm
 
 ## Downloading the project
 
 download the project using git clone
 
 ```bash
-git clone git@github.com:AgusDharmaUDEL93/pkmcenter-next-app.git
+git clone https://github.com/AgusDharmaUDEL93/iffassion-v1.git
 ```
 
 or you can download the zip file
@@ -35,11 +35,14 @@ The project structure is as follows
 ```bash
 root
 ├── src
-   ├── common
+   ├── components
+   ├── constants
    ├── data
    ├── pages
    ├── resources
+   ├── routes
    ├── styles
+   ├── utils
 ├── public
    ├── assets
 ```
@@ -48,11 +51,13 @@ root
 
 ### src: contains the source code of the project
 
-common: contains the common components that are used in the project like components, hooks, animations, utils, etc. <br/>
+components: contains the components that will be used on the website <br/>
+constants: contains the constants that will be used on the website <br/>
 data: contains the data that will be displayed on the website <br/>
 pages: contains the pages that will be displayed on the website <br/>
 resources: contains the resources that will be displayed on the website <br/>
 styles: contains the styles that will be used on the website <br/> <br/>
+utils: contains the utilities that will be used on the website <br/>
 
 ### public: contains the public files that will be accessed by the client
 
@@ -63,5 +68,11 @@ assets: contains the assets that will be used on the website
 <table align="center">
     <tr>
         <td align="center"><a href="https://github.com/AgusDharmaUDEL93"><img src="https://avatars.githubusercontent.com/u/92203868?v=4" width="150px;" alt=""/><br><sub><b>Agus Dharma (GusUdel)</b></sub></td>
+    </tr>
+    <tr>
+        <td align="center"><a href="https://github.com/tudemaha"><img src="https://avatars.githubusercontent.com/u/76739382?v=4" width="150px;" alt=""/><br><sub><b>Tude Maha</b></sub></td>
+    </tr>
+    <tr>
+        <td align="center"><a href="https://github.com/agungmahadana"><img src="https://avatars.githubusercontent.com/u/100138244?v=4" width="150px;" alt=""/><br><sub><b>Agung Mahadana</b></sub></td>
     </tr>
 </table>
