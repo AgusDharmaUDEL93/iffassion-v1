@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "label": "Beranda",
+    "href": "/"
+  },
+  {
+    "id": 2,
+    "label": "Lakukan Test",
+    "href": "/test"
+  },
+  {
+    "id": 3,
+    "label": "Bidang",
+    "href": "/about"
+  }
+]

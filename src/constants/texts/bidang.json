@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Frontend Dev",
+    "desc": "Frontend Developer mengkhususkan diri dalam menciptakan antarmuka pengguna dan pengalaman pengguna dari situs web dan aplikasi web. Mereka bekerja dengan teknologi seperti HTML, CSS, dan JavaScript untuk merancang dan mengimplementasikan antarmuka web yang menarik secara visual dan interaktif yang digunakan oleh pengguna secara langsung. Fokus mereka adalah memastikan pengalaman pengguna yang mulus dan menarik."
+  },
+  {
+    "id": 2,
+    "title": "Backend Dev",
+    "desc": "Backend Developer bertanggung jawab atas sisi server dari aplikasi web. Mereka bekerja pada pembangunan dan pemeliharaan server, basis data, dan logika aplikasi yang memungkinkan frontend berfungsi. Mereka menggunakan bahasa pemrograman seperti Python, Java, atau Node.js untuk mengelola pemrosesan data, keamanan, dan optimisasi server."
+  },
+  {
+    "id": 3,
+    "title": "Data Analist",
+    "desc": "Data Analyst adalah ahli dalam mengumpulkan, memproses, dan menganalisis data untuk mengekstrak wawasan berharga. Mereka bekerja dengan set data besar, alat statistik, dan teknik visualisasi data untuk membantu organisasi membuat keputusan berdasarkan data. Data Analyst memainkan peran penting dalam mengungkapkan tren, pola, dan informasi yang dapat diambil dari data."
+  },
+  {
+    "id": 4,
+    "title": "Devops",
+    "desc": "DevOps Engineer menghubungkan kesenjangan antara pengembangan perangkat lunak dan operasi TI. Mereka mengotomatisasi dan menyederhanakan proses pengembangan dan implementasi perangkat lunak untuk memastikan rilis yang cepat dan dapat diandalkan. DevOps Engineer menggunakan alat dan praktik seperti integrasi berkelanjutan, pengiriman berkelanjutan (CI/CD), dan kontainerisasi untuk meningkatkan kolaborasi dan efisiensi."
+  },
+  {
+    "id": 5,
+    "title": "Mobile Dev",
+    "desc": "Mobile Developer mengkhususkan diri dalam membuat aplikasi untuk perangkat mobile seperti smartphone dan tablet. Mereka mengembangkan aplikasi native (iOS atau Android) atau aplikasi lintas platform menggunakan kerangka kerja seperti React Native atau Flutter. Mobile Developer berfokus pada memberikan pengalaman mobile yang mulus kepada pengguna."
+  },
+  {
+    "id": 6,
+    "title": "UI/UX Design",
+    "desc": "UI/UX Designer fokus pada menciptakan antarmuka yang ramah pengguna dan menarik secara visual untuk situs web, aplikasi, dan perangkat lunak. Mereka melakukan penelitian pengguna, merancang kerangka kawat, prototipe, dan memastikan produk akhir memenuhi kebutuhan dan preferensi pengguna. UI/UX Designer memainkan peran penting dalam meningkatkan kepuasan dan keterlibatan pengguna."
+  }
+]
